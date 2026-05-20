@@ -38,6 +38,7 @@ class TreeNode:
             "reward": self.reward,
             "finished_message": self.finished_message,
             "trajectory_steps": len(self.trajectory),
+            "trajectory": self.trajectory,
             "children": [c.to_dict() for c in self.children]
         }
 
